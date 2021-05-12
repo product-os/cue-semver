@@ -1,6 +1,6 @@
 {
   "name": "cue-semver",
-  "version": "1.1.0",
+  "version": "0.1.0",
   "description": "CUE implementation of Semantic Version",
   "homepage": "https://github.com/product-os/cue-semver#readme",
   "main": "build/index.js",
@@ -28,6 +28,7 @@
   ],
   "scripts": {
     "clean": "rimraf build",
+    "build": "npm run clean",
     "lint": "balena-lint lib tests",
     "lint-fix": "balena-lint --typescript --fix lib tests",
     "test:node": "mocha -r ts-node/register --reporter spec tests/**/*.spec.ts",
