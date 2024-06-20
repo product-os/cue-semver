@@ -28,6 +28,7 @@
   ],
   "scripts": {
     "clean": "rimraf build",
+    "build": "npm run clean",
     "lint": "balena-lint lib tests",
     "lint-fix": "balena-lint --typescript --fix lib tests",
     "test:node": "mocha -r ts-node/register --reporter spec tests/**/*.spec.ts",
